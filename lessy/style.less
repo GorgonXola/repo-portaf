@@ -1,0 +1,61 @@
+@color-primary: #4caf50;
+@color-secondary: #a5d6a7;
+@color-background: #1b3b1b;
+@color-text: #d4edda;
+@color-hover: #009688;
+@color-link: #00ff7f;
+@shadow-color: rgba(0, 255, 0, 0.2);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 90%, rgba(28,121,9,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: @color-text;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 5%;
+    background: @color-background;
+    border-radius: 10px;
+    box-shadow: 0 0 10px @shadow-color;
+    margin-top: 50px;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 1px 3px 4px rgb(0, 128, 0);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    color: @color-primary;
+}
+
+p {
+    color: @color-secondary;
+}
+
+.contacto a {
+    display: block;
+    margin: 10px 0;
+    color: @color-link;
+    text-decoration: none;
+
+    &:hover {
+        color: @color-hover;
+    }
+}
